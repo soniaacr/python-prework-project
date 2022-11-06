@@ -42,14 +42,12 @@ print(bool(is_leap_year))
 
 # Question 5:
 # Write a function to check to see if all numbers in list are consecutive numbers. For example, [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5] are not consecutive numbers. The return should be boolean Type.
-def is_consecutive(a_list):
-    a_list = [5, 10, 6, 3, 17, 16, 3]
-def remove_duplicates(values):
-    output = []
-    seen = set()
-    for value in values:
-        if value not in seen:
-            output.append(value)
-            seen.add(value)
-    return output
-a_list = remove_duplicates('a_list')
+d_list = [25,16,18,17,24]
+sorted_list = sorted(a_list)
+#sorted(l) ==
+range_list=list(range(min(a_list), max(a_list)+1))
+if sorted_list == range_list:
+   print("True")
+else:
+   print("False")
+
